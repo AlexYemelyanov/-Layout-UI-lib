@@ -1,0 +1,83 @@
+.switch {
+  display: block;
+  margin-bottom: 60px;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch2 input {
+  display: none;
+}
+
+.switch__label {
+  padding-left: 80px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  transition: all 150ms ease-in-out;
+}
+
+
+
+.switch__label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 35px;
+  background-color: #23243E;
+  border-radius: 200px;
+  transition: inherit;
+}
+
+.switch__label::after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -1px;
+  width: 29px;
+  height: 29px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: inherit;
+}
+
+.switch input:active~.switch__label::after,
+.switch2 input:active~.switch__label::after {
+  width: 40px;
+}
+
+.switch input:checked:active~.switch__label::after,
+.switch2 input:checked:active~.switch__label::after {
+  left: 17px;
+}
+
+.switch input:checked~.switch__label::before,
+.switch2 input:checked~.switch__label::before {
+  background-color: #001AFF;
+}
+
+.switch input:checked~.switch__label::after,
+.switch2 input:checked~.switch__label::after {
+  left: 28px;
+}
+
+.switch__label:hover::before {
+  background-color: #0016d9;
+}
+
+.switch2 input:disabled~.switch__label {
+  pointer-events: none;
+}
+
+.switch2 input:disabled~.switch__label::before {
+  opacity: .5;
+}
+
+.switch2 input:disabled~.switch__label::after {
+  opacity: .5;
+}
