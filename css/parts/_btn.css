@@ -1,0 +1,30 @@
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  padding: 7px 34px;
+  background-color: #001AFF;
+  color: #fff;
+  background-color: #001AFF;
+  border: solid 0px;
+  border-radius: 10px;
+  margin-top: 20px;
+  line-height: 27px;
+  font-family: inherit;
+  font-size: inherit;
+  user-select: none;
+  cursor: pointer;
+  transition: background 200ms ease-in-out, box-shadow 100ms ease-in-out;
+}
+
+.btn--rounded {
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color: #0016D9;
+}
+
+.btn:active {
+  transform: scale(.95);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, .9);
+}
