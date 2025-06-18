@@ -44,3 +44,8 @@ a {
   display: inline-block;
   text-decoration: none;
 }
+
+input {
+  font-style: inherit;
+  font-family: inherit;
+}

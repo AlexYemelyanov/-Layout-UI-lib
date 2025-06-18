@@ -1,0 +1,52 @@
+.field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.field__control {
+  border: 1px solid #16182D;
+  background-color: #16182D;
+  width: 440px;
+  height: 52px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  outline: none;
+  color: #fff;
+  transition: all 150ms ease-in-out;
+}
+
+.field__control::placeholder {
+  color: #9CA0D2;
+}
+
+.field__control:focus {
+  box-shadow: 0 0 13px 0 rgba(0, 26, 255, 0.25);
+  border: 1px solid #001AFF;
+  background-color: #23243E;
+  color: #fff;
+}
+
+.field__icon {
+  position: absolute;
+  right: 46%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+}
+
+.akar-icons--search {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-width='2' d='m21 21l-4.486-4.494M19 10.5a8.5 8.5 0 1 1-17 0a8.5 8.5 0 0 1 17 0Z'/%3E%3C/svg%3E");
+  background-color: #9CA0D2;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
