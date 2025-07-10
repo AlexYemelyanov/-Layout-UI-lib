@@ -1,0 +1,29 @@
+.menubar {
+  border-radius: 10px;
+  padding: 0px 30px;
+  width: 870px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #23243E;
+}
+
+.menubar__logo {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 21px;
+}
+
+.menubar__nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.menubar__item:hover {
+  color: #F73164;
+}
+
+.menubar--light {}
