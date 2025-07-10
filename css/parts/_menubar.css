@@ -26,4 +26,14 @@
   color: #F73164;
 }
 
-.menubar--light {}
+.menubar--light {
+  margin-top: 25px;
+  background-color: #fff;
+  color: #000;
+
+}
+
+.menubar--light>.menubar__logo {
+  color: #000;
+
+}
